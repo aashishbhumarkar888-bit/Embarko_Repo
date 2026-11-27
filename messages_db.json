@@ -1,0 +1,15 @@
+[
+  {
+    "id": "msg_1790070717991_ru8vx",
+    "name": "Test Visitor",
+    "email": "test@example.com",
+    "subject": "Collab Inquiry",
+    "message": "Hello from verified test!",
+    "timestamp": "2026-09-22T09:51:57.991Z",
+    "sessionId": "session_kowu4dwll",
+    "deviceInfo": "Unknown Browser Agent",
+    "locationData": "Bhopal (MP), India",
+    "referralSource": "Direct Search Portfolio",
+    "status": "unread"
+  }
+]

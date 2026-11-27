@@ -1,0 +1,281 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ─────────────────────────────────────────────────────────────
+   DARK MYTHIC-PASTEL DESIGN TOKENS (OBSIDIAN & FROST EDITION)
+   ───────────────────────────────────────────────────────────── */
+:root {
+  --bg-obsidian: #05070D;
+  --surface-panel: rgba(11, 14, 24, 0.78);
+  --surface-elevated: rgba(16, 20, 34, 0.86);
+  --hairline: rgba(255, 255, 255, 0.08);
+  --hairline-strong: rgba(255, 255, 255, 0.14);
+  --frost-blue: #A5E8FF;
+  --pale-gold: #E6C999;
+  --ethereal-lavender: #C7B8FF;
+  --ember-mint: #98F5E1;
+  --text-primary: #F2F4FB;
+  --text-secondary: #9EA8C4;
+  --text-muted: #6E7896;
+}
+
+@layer utilities {
+  .font-mythic {
+    font-family: 'Cinzel', Georgia, serif;
+    letter-spacing: 0.1em;
+  }
+  .font-space {
+    font-family: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+  }
+  .font-mono {
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+html {
+  color-scheme: dark;
+  background-color: var(--bg-obsidian);
+  scroll-behavior: smooth;
+  overflow-x: clip;
+}
+
+body {
+  background-color: var(--bg-obsidian);
+  color: var(--text-primary);
+  font-family: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+  overflow-x: clip;
+}
+
+/* Refined Obsidian Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #05070D;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(165, 232, 255, 0.16);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(230, 201, 153, 0.42);
+}
+
+/* Museum-Grade Obsidian Panel (Ultra-thin 1px border + subtle inner top luminance) */
+.obsidian-panel {
+  background: linear-gradient(
+    180deg,
+    rgba(16, 20, 34, 0.78) 0%,
+    rgba(9, 12, 21, 0.84) 100%
+  );
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.06),
+    0 24px 64px -28px rgba(0, 0, 0, 0.9);
+}
+
+/* Carved Obsidian Monolith Hover Sheen */
+.monolith-card {
+  position: relative;
+  background: linear-gradient(
+    180deg,
+    rgba(15, 19, 32, 0.86) 0%,
+    rgba(8, 10, 18, 0.92) 100%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.07),
+    0 20px 50px -24px rgba(0, 0, 0, 0.88);
+  transition:
+    transform 240ms cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 240ms cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 240ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.monolith-card:hover {
+  border-color: rgba(230, 201, 153, 0.28);
+  box-shadow:
+    inset 0 1px 0 rgba(230, 201, 153, 0.16),
+    0 26px 60px -22px rgba(0, 0, 0, 0.92),
+    0 0 36px -18px rgba(165, 232, 255, 0.22);
+}
+
+/* Subtle Specular Sweep on Honored Credentials */
+.sheen-surface {
+  position: relative;
+  overflow: hidden;
+}
+
+.sheen-surface::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    115deg,
+    transparent 24%,
+    rgba(165, 232, 255, 0.05) 45%,
+    rgba(230, 201, 153, 0.08) 51%,
+    rgba(199, 184, 255, 0.05) 57%,
+    transparent 78%
+  );
+  transform: translateX(-125%);
+  transition: transform 760ms cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: none;
+}
+
+.sheen-surface:hover::after {
+  transform: translateX(125%);
+}
+
+/* Centerpiece "ENTER MY STORY" Rotating Conic Light Border + Ember Shimmer */
+@keyframes conic-story-spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.story-cta-shell {
+  position: relative;
+  display: inline-flex;
+  padding: 1.5px;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow:
+    0 0 42px -10px rgba(165, 232, 255, 0.42),
+    0 0 64px -16px rgba(230, 201, 153, 0.34),
+    0 20px 44px -16px rgba(0, 0, 0, 0.9);
+  transition: transform 260ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 260ms ease;
+}
+
+.story-cta-shell:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 0 56px -6px rgba(165, 232, 255, 0.62),
+    0 0 84px -12px rgba(230, 201, 153, 0.48),
+    0 24px 52px -14px rgba(0, 0, 0, 0.95);
+}
+
+.story-cta-shell:active {
+  transform: scale(0.985);
+}
+
+.story-cta-ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 240%;
+  aspect-ratio: 1 / 1;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg,
+    rgba(165, 232, 255, 0.95) 55deg,
+    rgba(255, 250, 238, 1) 90deg,
+    rgba(230, 201, 153, 0.95) 135deg,
+    transparent 195deg,
+    rgba(199, 184, 255, 0.72) 260deg,
+    rgba(152, 245, 225, 0.85) 315deg,
+    transparent 360deg
+  );
+  animation: conic-story-spin 4.8s linear infinite;
+  pointer-events: none;
+}
+
+/* Prologue "BEGIN ACT I" Dark-Obsidian Glass CTA + Slow Pale-Gold/Frost Border Sheen */
+.prologue-cta-shell {
+  position: relative;
+  display: inline-flex;
+  padding: 1.25px;
+  border-radius: 13px;
+  overflow: hidden;
+  background: rgba(230, 201, 153, 0.22);
+  transition: transform 220ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.prologue-cta-shell:hover {
+  transform: translateY(-1px);
+}
+
+.prologue-cta-shell:active {
+  transform: scale(0.985);
+}
+
+.prologue-cta-ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 260%;
+  aspect-ratio: 1 / 1;
+  background: conic-gradient(
+    from 0deg,
+    rgba(255, 255, 255, 0.08) 0deg,
+    rgba(165, 232, 255, 0.78) 42deg,
+    rgba(255, 250, 236, 0.92) 72deg,
+    rgba(230, 201, 153, 0.85) 110deg,
+    rgba(255, 255, 255, 0.08) 175deg,
+    rgba(165, 232, 255, 0.42) 245deg,
+    rgba(230, 201, 153, 0.58) 295deg,
+    rgba(255, 255, 255, 0.08) 360deg
+  );
+  animation: conic-story-spin 7.2s linear infinite;
+  pointer-events: none;
+}
+
+.prologue-cta-inner {
+  position: relative;
+  z-index: 1;
+  border-radius: 12px;
+  background: rgba(8, 11, 20, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: background-color 220ms ease, border-color 220ms ease;
+}
+
+.prologue-cta-shell:hover .prologue-cta-inner {
+  background: rgba(16, 22, 38, 0.94);
+  border-color: rgba(230, 201, 153, 0.45);
+}
+
+/* Dramatic Brief Shake During Bifröst Rift Shatter */
+@keyframes rift-camera-shake {
+  0%, 100% { transform: translate3d(0, 0, 0); }
+  12% { transform: translate3d(-5px, 3px, 0); }
+  25% { transform: translate3d(6px, -4px, 0); }
+  38% { transform: translate3d(-6px, -2px, 0); }
+  52% { transform: translate3d(5px, 4px, 0); }
+  66% { transform: translate3d(-3px, 2px, 0); }
+  80% { transform: translate3d(2px, -2px, 0); }
+}
+
+.animate-rift-shake {
+  animation: rift-camera-shake 0.52s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+/* Reduced Motion Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .story-cta-ring,
+  .prologue-cta-ring,
+  .animate-rift-shake {
+    animation: none !important;
+  }
+  .sheen-surface::after {
+    display: none;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Print Styles for Executive CV Preview */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+}

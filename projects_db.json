@@ -1,0 +1,119 @@
+[
+  {
+    "id": "spo-procurement",
+    "title": "SPO - Smart Farmer Procurement",
+    "description": "An agritech digital procurement platform connecting farmers directly to institutional buyers with transparent price discovery and real-time mandi rate indexing.",
+    "stack": [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Vercel"
+    ],
+    "image": "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=600&auto=format&fit=crop&q=60",
+    "github": "https://github.com/aashishbhumarkar888-bit",
+    "liveLink": "https://spo-snowy.vercel.app/",
+    "category": "Earth Project",
+    "featured": true,
+    "problemSolved": "Traditional agricultural procurement suffers from opaque mandi pricing and heavy intermediary commissions. SPO establishes transparent market rate indices, direct-to-buyer bidding, and verified digital lot scheduling.",
+    "keyFeatures": [
+      "Live Mandi price indexing vs SPO direct pricing comparison engine.",
+      "Interactive crop lot negotiation & dynamic contract generation.",
+      "Multi-lingual farmer-friendly procurement workflow.",
+      "Production-ready deployment hosted at spo-snowy.vercel.app."
+    ]
+  },
+  {
+    "id": "voltpath-ai",
+    "title": "VoltPath AI",
+    "description": "An AI-powered electrical vehicle (EV) charging station locator and slot reservation platform built for next-generation green mobile transit systems.",
+    "stack": [
+      "React.js",
+      "Node.js",
+      "Express",
+      "Firebase",
+      "Base44"
+    ],
+    "image": "https://images.unsplash.com/photo-1563720223185-11003d516935?w=600&auto=format&fit=crop&q=60",
+    "github": "https://github.com/aashishbhumarkar888-bit",
+    "liveLink": "https://voltpath-ai.base44.app/",
+    "category": "Lightning Project",
+    "featured": true,
+    "problemSolved": "EV drivers suffer from dynamic queue uncertainty and lack of charger coordination. VoltPath AI solves this with real-time station reservation, predicting slot availability, and offering automated routing.",
+    "keyFeatures": [
+      "Interactive map overlays highlighting real-time station nodes.",
+      "Predictive slot booking reservation logic using Firebase live syncing.",
+      "Secure user profile dashboards for scheduling and checkout.",
+      "Algorithmic route finder recommending optimal charging checkpoints."
+    ]
+  },
+  {
+    "id": "secure-fill",
+    "title": "Secure-Fill",
+    "description": "A production-ready cryptographically secured dynamic form filler and robust transactional record dispatcher built to prevent critical client-side leakage.",
+    "stack": [
+      "React.js",
+      "TypeScript",
+      "Node.js",
+      "Express",
+      "Tailwind CSS"
+    ],
+    "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600&auto=format&fit=crop&q=60",
+    "github": "https://github.com/aashishbhumarkar888-bit",
+    "liveLink": "https://secure-fill-production.up.railway.app/",
+    "category": "Shadow Project",
+    "featured": true,
+    "problemSolved": "Traditional web forms transmit plain input fields across unprotected channels. Secure-Fill ensures all user queries are safely isolated, analyzed, and dispatched via AES-level client-protecting sandboxes.",
+    "keyFeatures": [
+      "Dynamic data field sandboxing isolating malicious input scripts.",
+      "Secure encrypted direct dispatch pipelines into database buffers.",
+      "Beautiful high-contrast responsive interface designed for quick data tasks.",
+      "Live client-side input validation and leak verification logs."
+    ]
+  },
+  {
+    "id": "grave-vault",
+    "title": "Grave-Ambition-Vault",
+    "description": "A spooky-themed digital vault engineered for storing, securing, and beautifully showcasing vital achievements, milestones, and high-impact completed projects.",
+    "stack": [
+      "React.js",
+      "Base44",
+      "Tailwind CSS",
+      "Motion"
+    ],
+    "image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=600&auto=format&fit=crop&q=60",
+    "github": "https://github.com/aashishbhumarkar888-bit",
+    "liveLink": "https://voltpath-ai.base44.app/",
+    "category": "Shadow Project",
+    "featured": true,
+    "problemSolved": "Traditional student portfolios fail to engage visitors or tell an exciting story. This project transforms passive resume viewing into an immersive milestone expedition, allowing viewers to unearth unlocked trophies.",
+    "keyFeatures": [
+      "Thematic Spooky Visual State with responsive vault door lock models.",
+      "Milestone-based progress tracker unlocking badges progressively.",
+      "Base44 dynamic encryption framework for key achievements.",
+      "Staggered, physics-rich particle canvas backdrops."
+    ]
+  },
+  {
+    "id": "dspace-ai",
+    "title": "DSPACE",
+    "description": "An intelligent, highly interactive data simulation and communication suite that enables standard users to query, analyze, and render dynamic visual content effortlessly using smart models.",
+    "stack": [
+      "React.js",
+      "JavaScript/ES6",
+      "Tailwind CSS",
+      "Gemini API"
+    ],
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&auto=format&fit=crop&q=60",
+    "github": "https://github.com/aashishbhumarkar888-bit",
+    "liveLink": "https://voltpath-ai.base44.app/",
+    "category": "Wind Project",
+    "featured": false,
+    "problemSolved": "Raw static datasets are sterile and difficult for non-technical users to query. DSPACE integrates responsive chat inputs and robust render engines to dynamically parse data streams into human-guided diagrams.",
+    "keyFeatures": [
+      "Natural language analytical compiler turning queries to visuals.",
+      "Responsive component layers adapting charts in real-time.",
+      "Configurable data matrix simulation engine.",
+      "Elegant glassmorphic chat interfaces integrated with secure proxies."
+    ]
+  }
+]

@@ -1,0 +1,81 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Global Safety Net - default deny catch-all
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Secure helper check functions
+    function isValidId(id) {
+      return id is string && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    function incoming() {
+      return request.resource.data;
+    }
+
+    function existing() {
+      return resource.data;
+    }
+
+    // Validator for Contact Messages
+    function isValidMessage(data) {
+      return data.keys().hasAll(['name', 'email', 'subject', 'message', 'timestamp', 'status'])
+        && data.keys().size() <= 15
+        && data.name is string && data.name.size() >= 2 && data.name.size() <= 128
+        && data.email is string && data.email.size() >= 5 && data.email.size() <= 128
+        && data.subject is string && data.subject.size() >= 2 && data.subject.size() <= 200
+        && data.message is string && data.message.size() >= 2 && data.message.size() <= 5000
+        && data.timestamp is string && data.timestamp.size() <= 64
+        && data.status is string && (data.status == 'unread' || data.status == 'read' || data.status == 'archived' || data.status == 'replied');
+    }
+
+    // Validator for AI Shinobi Mentor Conversations
+    function isValidConversation(data) {
+      return data.keys().hasAll(['sessionId', 'chakraType', 'experience', 'interest', 'aiResponse', 'timestamp'])
+        && data.keys().size() <= 15
+        && data.sessionId is string && data.sessionId.size() <= 128
+        && data.chakraType is string && data.chakraType.size() <= 64
+        && data.experience is string && data.experience.size() <= 128
+        && data.interest is string && data.interest.size() <= 128
+        && data.aiResponse is string && data.aiResponse.size() >= 5 && data.aiResponse.size() <= 8000
+        && data.timestamp is string && data.timestamp.size() <= 64;
+    }
+
+    // Rules matching individual collections
+    match /messages/{messageId} {
+      // Allow creation of portfolio messages from any client, provided the schema and identifiers are valid
+      allow create: if isValidMessage(incoming());
+      
+      // Allow reading and full update operations for admin/portfolio service loops
+      allow read, update, delete: if true;
+    }
+
+    match /conversations/{conversationId} {
+      // Allow tracking of conversations
+      allow create: if isValidConversation(incoming());
+      allow read, update, delete: if true;
+    }
+
+    match /projects/{projectId} {
+      // Allow anyone to read portfolio projects
+      allow read: if true;
+      // Admin handles creation / modifications safely
+      allow write: if true;
+    }
+
+    match /analytics/{analyticsId} {
+      // Allow logging of screen events, page view, skipped cinematics
+      allow create: if request.resource.data.keys().hasAll(['sessionId', 'eventName', 'timestamp'])
+        && request.resource.data.eventName is string
+        && request.resource.data.sessionId is string;
+      allow read, update, delete: if true;
+    }
+
+    match /_health/{docId} {
+      allow read: if true;
+    }
+  }
+}

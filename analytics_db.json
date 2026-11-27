@@ -1,0 +1,14 @@
+{
+  "visits": [
+    {
+      "sessionId": "sess_4c5tfuoi3220",
+      "eventName": "navbar_resume_opened",
+      "pageUrl": "/",
+      "metadata": {
+        "screenSize": "360x592"
+      },
+      "timestamp": "2026-09-22T09:52:36.448Z",
+      "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Mobile Safari/537.36"
+    }
+  ]
+}

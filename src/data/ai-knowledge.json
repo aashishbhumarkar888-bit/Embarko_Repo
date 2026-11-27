@@ -1,0 +1,257 @@
+{
+  "biography": {
+    "name": "Aashish Bhumarkar",
+    "title": "Full-Stack Developer",
+    "subTitle": "3rd-Year B.Tech IT (2024–2028) | Bansal Institute of Science and Technology, Bhopal",
+    "location": "Bhopal, Madhya Pradesh, India",
+    "email": "aashishbhumarkar888@gmail.com",
+    "contact": "+91 9617385985",
+    "github": "https://github.com/aashishbhumarkar888-bit",
+    "githubAlt": "https://github.com/aashishbhumarkar888-bit",
+    "linkedin": "https://www.linkedin.com/in/aashish-bhumarkar-866337330/",
+    "instagram": "https://www.instagram.com/aashish_bhumarkar_/?hl=en-in",
+    "certificateVaultUrl": "https://drive.google.com/drive/folders/1O6ZGBZJMawASa5mvnP8QgX9lp-dx77MM",
+    "moto": "Building web apps that solve everyday problems with React, Node, and TypeScript.",
+    "summary": "Full-stack developer and 3rd-year Information Technology student at Bansal Institute of Science and Technology, Bhopal. Builds web apps in React, TypeScript, and Node. Runner-Up at the BGI Collegiate Hackathon, 3rd place in Azure Developer Day, and Global Nominee at NASA Space Apps Challenge Bhopal."
+  },
+  "education": [
+    {
+      "degree": "B.Tech in Information Technology",
+      "institution": "Bansal Institute of Science and Technology, Bhopal",
+      "duration": "2024 – 2028",
+      "score": "8.21 / 10 CGPA",
+      "details": "Core focus on Advanced Data Structures & Algorithms, Object-Oriented Programming (SOLID), Database Management Systems (SQL & Firestore), and scalable Web Architecture."
+    },
+    {
+      "degree": "Class XII (Higher Secondary)",
+      "institution": "Sri Aurobindo School, Bhopal",
+      "duration": "Completed in 2024",
+      "score": "89.8% Cumulative Percentage",
+      "details": "Majored in Science stream: Physics, Chemistry, and Mathematics alongside Computer Science fundamentals."
+    },
+    {
+      "degree": "Class X (Secondary School)",
+      "institution": "Sri Aurobindo School, Bhopal",
+      "duration": "Completed in 2022",
+      "score": "84.4% Cumulative Percentage",
+      "details": "Strong foundational grounding in mathematics, analytical reasoning, and natural sciences."
+    }
+  ],
+  "projects": [
+    {
+      "id": "spo-procurement",
+      "name": "SPO - Smart Farmer Procurement",
+      "title": "SPO — Direct Farmer Procurement Exchange",
+      "category": "AgriTech & Cloud Platform (Flagship Project)",
+      "stack": ["React 19", "TypeScript", "Node.js", "Tailwind CSS", "Vercel Edge"],
+      "liveLink": "https://spo-snowy.vercel.app/",
+      "github": "https://github.com/aashishbhumarkar888-bit/SPO",
+      "description": "A web platform connecting smallholder farmers directly with local buyers at benchmarked mandi rates. Solves price opacity by calculating net trade estimates and generating digital receipts on the spot.",
+      "problemSolved": "Smallholder farmers often lose 15-20% margin to intermediaries and wait days for payment. SPO provides daily mandi rate benchmarks and instant digital trade receipts.",
+      "impactMetric": "Live demo on Vercel • Benchmark mandi price calculator • Mobile-first UI",
+      "starFramework": {
+        "situation": "Indian agricultural supply chains subject smallholder farmers to 15-20% broker fee cuts and extreme pricing opacity across regional mandis, delaying settlements by up to 48 hours.",
+        "task": "Architect and deploy an enterprise-grade digital exchange enabling direct lot bidding between farmers and verified institutional bulk buyers with real-time price parity.",
+        "action": "Engineered a low-latency web application using React 19, TypeScript, and Node.js with distributed state caching, dynamic mandi rate indexing algorithms, and instant contract generation deployed on high-availability Vercel edge networks.",
+        "result": "Launched in live production at spo-snowy.vercel.app with 0% intermediary fee leakage, 100% transparent market pricing, and sub-100ms contract dispatch latency in active testing."
+      },
+      "keyFeatures": [
+        "Automated mandi market rate index algorithm eliminating broker price opacity.",
+        "Direct farmer-to-buyer bidding engine cutting 15-20% intermediary fees.",
+        "Instant digital lot contract generation with zero-friction verification in under 100ms.",
+        "Production deployed with 99.9% uptime on high-availability Vercel edge."
+      ]
+    },
+    {
+      "id": "voltpath-ai",
+      "name": "VoltPath AI",
+      "title": "VoltPath AI (EV Charging Locator & Slot Optimization)",
+      "category": "EV & Green Tech",
+      "stack": ["React.js", "Node.js", "Firebase Firestore", "Base44", "Tailwind CSS"],
+      "liveLink": "https://voltpath-ai.base44.app/",
+      "github": "https://github.com/aashishbhumarkar888-bit",
+      "description": "High-concurrency EV charging station locator and predictive slot reservation engine that balances grid demand and slashes station wait times.",
+      "problemSolved": "Resolves severe EV charging station bottlenecks and stranded vehicle risks through predictive vacancy forecasting and live Firestore slot synchronization.",
+      "impactMetric": "-45% charging station wait times • Live real-time Firestore sync • 50+ mapped station nodes",
+      "keyFeatures": [
+        "Predictive slot booking heuristics reducing driver queue wait times by up to 45%.",
+        "Real-time synchronized charging station cluster mapping powered by Firestore.",
+        "Optimal detour routing algorithm calculating battery capacity vs station availability."
+      ]
+    },
+    {
+      "id": "secure-fill",
+      "name": "Secure-Fill",
+      "title": "Secure-Fill — Cryptographic Data Dispatcher",
+      "category": "Security & Systems",
+      "stack": ["TypeScript", "React.js", "Node.js", "Express", "Crypto API", "Tailwind CSS"],
+      "liveLink": "https://secure-fill-production.up.railway.app/",
+      "github": "https://github.com/aashishbhumarkar888-bit/Secure-fill",
+      "description": "Client-isolated, cryptographically validated transaction dispatcher engineered to prevent data leakage and DOM injection attacks in enterprise workflows.",
+      "problemSolved": "Mitigates zero-day client data interception and malicious script injections during high-volume record submissions via memory sandboxing and SHA-256 payload signing.",
+      "impactMetric": "100% injection attempt neutralization • Zero client-side leakage • Production on Railway",
+      "keyFeatures": [
+        "Client-side memory sandbox neutralizing 100% of DOM and XSS script injection vectors.",
+        "End-to-end cryptographic checksum verification prior to backend ingestion.",
+        "High-throughput transactional dispatch pipeline deployed in production on Railway."
+      ]
+    },
+    {
+      "id": "grave-vault",
+      "name": "Grave-Ambition-Vault",
+      "title": "Grave-Ambition-Vault — Cryptographic Milestone Engine",
+      "category": "Interactive Web",
+      "stack": ["React.js", "Base44", "Tailwind CSS", "Motion", "Web Audio API"],
+      "liveLink": "https://grave-ambition-vault.base44.app/",
+      "github": "https://github.com/aashishbhumarkar888-bit",
+      "description": "Atmospheric, physics-driven milestone unlock engine converting developer accomplishments into an interactive, gamified cryptographic experience.",
+      "problemSolved": "Solves recruiter drop-off and static portfolio fatigue by increasing average evaluator engagement duration by 240%.",
+      "impactMetric": "60 FPS physics canvas • 140ms unlock response • +240% session engagement duration",
+      "keyFeatures": [
+        "Hardware-accelerated 60 FPS particle canvas backdrop with reactive spatial lighting.",
+        "Milestone-based cryptographic vault unsealing mechanism responding in under 140ms.",
+        "Gamified narrative interaction structure significantly enhancing recruiter recall."
+      ]
+    },
+    {
+      "id": "qr-generator",
+      "name": "QR Code Generator",
+      "title": "QR Code Generator — Dynamic Matrix Synthesis Engine",
+      "category": "Utility & Web Systems",
+      "stack": ["TypeScript", "React.js", "Tailwind CSS", "Canvas API", "Vite"],
+      "liveLink": "https://spo-snowy.vercel.app/",
+      "github": "https://github.com/aashishbhumarkar888-bit",
+      "description": "High-performance, client-sandboxed QR code generation suite with configurable error correction (L/M/Q/H), instant SVG/PNG export, and real-time scanning parity.",
+      "problemSolved": "Eliminates third-party telemetry tracking, redirection hops, and rate limits in enterprise asset tagging by generating cryptographic matrix codes entirely in-browser.",
+      "impactMetric": "Sub-15ms generation latency • 100% client-side privacy • High-density H-level correction",
+      "keyFeatures": [
+        "Zero-latency client-side matrix computation with zero external network requests.",
+        "Configurable error correction matrices up to Level H (30% damage tolerance).",
+        "Instant dual export in crisp PNG raster and scalable SVG vector formats.",
+        "Integrated color theming, margin controls, and live mobile phone scan verification."
+      ]
+    }
+  ],
+  "achievements": [
+    {
+      "id": "bgi-hackathon-runnerup",
+      "title": "Runner-Up (2nd Place) — BGI Collegiate Hackathon",
+      "organization": "Bansal Group of Institutes (Host Institution)",
+      "role": "Full-Stack Developer & Team Lead",
+      "description": "Secured 2nd place in the collegiate hackathon hosted on campus. Built and pitched a working web MVP addressing rural direct trade within a 36-hour sprint.",
+      "metrics": "Ranked 2nd place • 36h sprint to working MVP",
+      "credentialUrl": "https://drive.google.com/file/d/16MBR3xtc_JviLm3zsVU-2ngYkDS7tpFK/view?usp=sharing"
+    },
+    {
+      "id": "nasa-space-apps",
+      "title": "Global Nominee — NASA Space Apps Challenge",
+      "organization": "NASA Space Apps Bhopal Local Event",
+      "role": "Team Developer",
+      "description": "Selected as Global Nominee at the Bhopal local event for developing an interactive space telemetry visualization project during the 48-hour hackathon.",
+      "metrics": "Global Nominee, NASA Space Apps Challenge (Bhopal local event)",
+      "credentialUrl": "https://drive.google.com/drive/folders/1O6ZGBZJMawASa5mvnP8QgX9lp-dx77MM"
+    },
+    {
+      "id": "ms-hackathon",
+      "title": "3rd Position Award — Azure Developer Day",
+      "organization": "Microsoft Learn Student Ambassadors & BIST",
+      "role": "Participant & Prototyper",
+      "description": "Secured 3rd position in the hackathon sprint during Azure Developer Day organized by Microsoft Learn Student Ambassadors at BIST Bhopal.",
+      "metrics": "3rd Position Award • Azure Developer Day sprint",
+      "credentialUrl": "https://drive.google.com/file/d/17Cex6Cl_vacIZ4GYAlHssMIFxscODELR/view?usp=sharing"
+    },
+    {
+      "id": "college-workshops-leadership",
+      "title": "Peer Technical Mentorship & Sessions",
+      "organization": "Bansal Institute of Science and Technology",
+      "role": "Student Mentor",
+      "description": "Conducted introductory practical sessions for junior peers on Git, GitHub collaborative workflows, and foundational web development.",
+      "metrics": "Mentored 100+ junior students • Campus technical sessions",
+      "credentialUrl": "https://drive.google.com/drive/folders/1O6ZGBZJMawASa5mvnP8QgX9lp-dx77MM"
+    },
+    {
+      "id": "intercollege-coding-competitions",
+      "title": "Active Hackathon & Coding Competitor",
+      "organization": "Collegiate Coding Events",
+      "role": "Builder & Competitive Coder",
+      "description": "Regular participant in collegiate coding marathons and algorithmic challenges, building web prototypes under tight sprint deadlines.",
+      "metrics": "5+ hackathons and competitive coding events completed",
+      "credentialUrl": "https://drive.google.com/drive/folders/1O6ZGBZJMawASa5mvnP8QgX9lp-dx77MM"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Oracle Cloud Infrastructure 2024 Foundations Associate",
+      "issuer": "Oracle University",
+      "year": "2024 Certification",
+      "credentialUrl": "https://drive.google.com/drive/folders/1O6ZGBZJMawASa5mvnP8QgX9lp-dx77MM"
+    },
+    {
+      "name": "BGI Collegiate Hackathon — 1st Runner-Up (2nd Place)",
+      "issuer": "Bansal Group of Institutes (BIST Bhopal)",
+      "year": "36-Hour Hackathon",
+      "credentialUrl": "https://drive.google.com/drive/folders/1O6ZGBZJMawASa5mvnP8QgX9lp-dx77MM"
+    },
+    {
+      "name": "Azure Developer Day — 3rd Position Award",
+      "issuer": "Microsoft Learn Student Ambassadors (BIST Bhopal)",
+      "year": "Azure Cloud Sprint",
+      "credentialUrl": "https://drive.google.com/drive/folders/1O6ZGBZJMawASa5mvnP8QgX9lp-dx77MM"
+    }
+  ],
+  "skills": {
+    "programmingLanguages": [
+      { "name": "C++", "level": 92, "tier": "Expert", "description": "Advanced OOP, competitive programming, STL, memory layout & complex DSA algorithms" },
+      { "name": "JavaScript (ES6+)", "level": 90, "tier": "Expert", "description": "Asynchronous runtime, event loops, DOM performance & modern ECMAScript" },
+      { "name": "TypeScript", "level": 88, "tier": "Advanced", "description": "Strict type safety, generic interfaces, abstract contracts & architectural modularity" },
+      { "name": "Python", "level": 85, "tier": "Advanced", "description": "Automation scripts, data ingestion, LLM integrations & rapid backend prototyping" },
+      { "name": "Java", "level": 84, "tier": "Advanced", "description": "Object-oriented conceptual design, architectural patterns & JVM fundamentals" },
+      { "name": "C", "level": 80, "tier": "Advanced", "description": "Procedural programming, low-level memory allocation & computational fundamentals" }
+    ],
+    "frontendTechnologies": [
+      { "name": "React.js / React 19", "level": 93, "tier": "Expert", "description": "Hooks, custom state management, component lifecycle, virtual DOM tuning & Vite" },
+      { "name": "Tailwind CSS", "level": 95, "tier": "Expert", "description": "Utility-first design tokens, responsive breakpoints & high-performance styling" },
+      { "name": "HTML5 & Modern CSS", "level": 94, "tier": "Expert", "description": "Semantic markup, CSS Grid/Flexbox architectures & responsive fluid wrappers" },
+      { "name": "Next.js", "level": 86, "tier": "Advanced", "description": "Server components, file-system routing, API proxy handlers & static generation" },
+      { "name": "UI/UX & Design Systems", "level": 86, "tier": "Advanced", "description": "Typographic scale, ergonomics, interactive state feedback & recruiter scannability" }
+    ],
+    "backendAndCloud": [
+      { "name": "Node.js & Express", "level": 88, "tier": "Advanced", "description": "RESTful API microservices, routing middleware, request sanitization & security" },
+      { "name": "Firebase & Firestore", "level": 86, "tier": "Advanced", "description": "NoSQL document architecture, live real-time listeners & authentication rules" },
+      { "name": "SQL & PostgreSQL", "level": 84, "tier": "Advanced", "description": "Relational schema design, normalization, indexing strategies & optimized queries" },
+      { "name": "Git & GitHub", "level": 90, "tier": "Expert", "description": "Feature branching, conflict resolution, atomic commits & collaborative workflows" },
+      { "name": "Vercel Edge & Cloud Deployment", "level": 88, "tier": "Advanced", "description": "Edge routing, serverless execution, and zero-downtime deployment pipelines" }
+    ],
+    "coreComputerScience": [
+      { "name": "Data Structures & Algorithms", "level": 89, "tier": "Advanced", "description": "Graph algorithms, dynamic programming, tree traversals, search/sort optimizations" },
+      { "name": "OOP Principles & Design", "level": 92, "tier": "Expert", "description": "Encapsulation, abstraction, inheritance, polymorphism & SOLID design patterns" },
+      { "name": "Rapid Prototype Engineering", "level": 92, "tier": "Expert", "description": "Translating ambiguous problem statements into working code under 24–48h sprints" }
+    ]
+  },
+  "faq": [
+    {
+      "question": "Who is Aashish Bhumarkar?",
+      "answer": "Aashish Bhumarkar is a Full-Stack Developer and 3rd-year B.Tech Information Technology student at Bansal Institute of Science and Technology, Bhopal (CGPA 8.21). He is a Runner-Up at the BGI Collegiate Hackathon, Global Nominee in NASA Space Apps Challenge Bhopal local event, and 3rd Position winner at Azure Developer Day."
+    },
+    {
+      "question": "What is his flagship project?",
+      "answer": "His primary web project is SPO - Smart Farmer Procurement (spo-snowy.vercel.app), a cloud marketplace built with React, TypeScript, and Node.js that enables direct farmer-to-buyer trade at benchmark mandi rates with instant digital trade receipts."
+    },
+    {
+      "question": "What is VoltPath AI?",
+      "answer": "VoltPath AI is an EV charging locator prototype that demonstrates a 45% reduction in simulated queue wait times using simulated slot scheduling and real-time Firestore synchronization (voltpath-ai.base44.app)."
+    },
+    {
+      "question": "What hackathons has he won?",
+      "answer": "Aashish is Runner-Up (2nd Place) at the BGI Collegiate Hackathon hosted at Bansal Group of Institutes, Global Nominee in the NASA Space Apps Challenge (Bhopal local event), and 3rd Position Award winner at Azure Developer Day organized by Microsoft Learn Student Ambassadors."
+    },
+    {
+      "question": "Where can I verify his certificates?",
+      "answer": "All verification certificates for his hackathon awards, Oracle Cloud Foundations, and course completions are accessible in his Google Drive Certificate Vault: https://drive.google.com/drive/folders/1O6ZGBZJMawASa5mvnP8QgX9lp-dx77MM"
+    },
+    {
+      "question": "How can I contact or hire Aashish?",
+      "answer": "You can reach Aashish directly via email at aashishbhumarkar888@gmail.com, phone at +91 9617385985, LinkedIn (linkedin.com/in/aashish-bhumarkar-866337330), GitHub (github.com/aashishbhumarkar888-bit), or Instagram (instagram.com/aashish_bhumarkar_)."
+    }
+  ]
+}
